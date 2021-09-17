@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*********************************************************************
+
+        Base Style
+
+**********************************************************************/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
+  line-height: 1;
+  font-size: 13px;
+}
+article, header, footer, aside, figure, figcaption, nav, section { 
+    display:block;
+}
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+a:focus, *:focus { 
+  outline: none; 
+}
+i {
+	font-style: normal;
+}
+/*********************************************************************
+
+        Common Style
+
+**********************************************************************/
+
+
+/*********************************************************************
+
+        Animation
+
+**********************************************************************/
+@keyframes {
+  0% {
+
+  }
+}
+.anime_ball {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: crimson;
+  text-align: center;
+  line-height: 60px;
+  color: #FFF;
+}
+.linear {
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+}
+.ease {
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+}
+.ease.jq_trsn {
+  transform: translateX(1000px);
+}
+.linear.jq_trsn {
+  transform: translateX(1000px);
+}
+.ease-in {
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in;
+}
+.ease-in.jq_trsn {
+  transform: translateX(1000px);
+}
+.ease-out {
+  transition-duration: 0.8s;
+  transition-timing-function: ease-out;
+}
+.ease-out.jq_trsn {
+  transform: translateX(1000px);
+}
+.cubic-b {
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.cubic-b.jq_trsn {
+  transform: translateX(1000px);
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>CSS Animation</title>
+<meta name="description" content="ページの説明">
+
+<!----------------------------
+    CSS
+------------------------------>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<!----------------------------
+ここからブラウザ表示コンテンツ
+------------------------------>
+<h1>CSS Animation</h1>
+<h2>transition-timing-function</h2>
+<section id="anime_01">
+    <p class="anime_ball linear">linear</p>
+    <p class="anime_ball ease">ease</p>
+    <p class="anime_ball ease-in">ease-in</p>
+    <p class="anime_ball ease-out">ease-out</p>
+    <p class="anime_ball cubic-b">cubic-b</p>
+    <button class="btn1" id="start_btn1">Start</button>
+</section>
+
+
+
+
+
+<!----------------------------
+    JavaScript
+------------------------------>
+<script src="jquery-1.9.1.min.js"></script>
+<script>
+jQuery(function($){
+    $('#start_btn1').click(function(){
+        $(".linear, .ease, .ease-in, .ease-out, .cubic-b").toggleClass('jq_trsn');
+    });
+});
+</script>
+</body>
+</html>

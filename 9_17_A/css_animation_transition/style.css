@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.transition_box{
+    height: 75px;
+    width: 75px;
+    transition: width 1s;
+    background-color: skyblue;
+    margin-bottom: 100px;
+}
+.transition_box:hover{
+    width: 100%;
+}
+.keyframe_box{
+    height: 75px;
+    width: 75px;
+    background-color: skyblue;
+    animation: 1s forwards kf_box_out;
+}
+.keyframe_box:hover{
+    animation: 1s forwards kf_box;
+}
+@keyframes kf_box {
+    50% {
+        width: 30%;
+        background-color: red;
+    }
+    100% {
+        width: 100%;
+        background-color:slateblue;
+    }
+}
+@keyframes kf_box_out {/*animation 戻り用*/
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 30%;
+        background-color: red;
+    }
+    100% {
+        background-color:skyblue;
+    }
+}

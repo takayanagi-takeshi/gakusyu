@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*ボディーからの.ltimg*/
+body .ltimg {
+  color: blueviolet;
+}
+
+/*クラスの.ltimg*/
+.ltimg {
+  color: blue;
+  list-style-image: url(./images/star.png);
+}
+
+/*IDの.ltimg*/
+#ltimg01 {
+  color: red;
+}
+
+.ltimg02 {
+  color: rgb(0, 255, 21);
+}
+
+.sns {
+  list-style: none;
+}
+
+.sns li {
+  margin-bottom: 40px;
+}
+
+.sns a {/*背景の設定*/
+  display: flex;
+  justify-content: center;/*背景をセンターに*/
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;/*丸い形*/
+  background-color: #04abed;
+  transition: 1.6s;/*アニメーション(浮かび上がる)*/
+}
+
+/*アニメーション*/
+.sns a:hover {
+  background-color: #04abed59;/*アニメーション(薄くなる)*/
+  transform: scale(2.0) rotate(360deg);/*アニメーション(大きくなる)（回る）*/
+}
+
+/*svgファイル装飾マーク自体*/
+.sns svg {
+  width: 40px;
+  height: auto;
+  fill: #fff;
+}
